@@ -54,7 +54,8 @@
   <section class="sect0">
     <div class="hero">
       <div class="hero-image-wrapper"><img src="./images/illustration-intro.png" alt="" id="hero-image">
-      <img src="./images/" alt=""></div>
+        <img src="./images/" alt="">
+      </div>
       <h2 class="hero-heading">All your files in one secure location, accessible anywhere.</h2>
       <p id="hero-text">Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.</p>
@@ -170,8 +171,12 @@
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.</p>
       <div id="sect4-lower">
-        <input type="email" placeholder="example@gmail.com">
-        <button type="submit">Get Started For Free</button>
+        <form action="">
+          <input type="email" placeholder="example@gmail.com" required id="email-input">
+          <p id="error-message-mobile" hidden>Please enter a valid email address.</p>
+          <button type="submit" id="submit-button">Get Started For Free</button>
+        </form>
+        <p id="error-message-desktop" hidden>Please enter a valid email address.</p>
       </div>
     </section>
 
@@ -220,6 +225,7 @@
       </div>
     </footer>
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>

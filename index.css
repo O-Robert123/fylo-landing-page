@@ -307,12 +307,22 @@ ul li:hover {
     transition: all 0.4s ease-in-out;
 }
 
+#error-message-mobile {
+    color: red;
+}
+
+#error-message-desktop {
+    text-align: left;
+    margin: 5px 10%;
+    color: red;
+}
+
 .sect4 button:hover {
     background: hsl(176, 68%, 64%);
     cursor: pointer;
 }
 
-#sect4-lower {
+form {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -438,6 +448,10 @@ footer {
         left: 15%;
     }
 
+    #error-message-desktop {
+        margin: 5px 8%;
+    }
+
     footer {
         padding-top: 200px;
         padding-left: 50px;
@@ -526,7 +540,7 @@ footer {
         width: 70%;
     }
 
-    .sect1{
+    .sect1 {
         height: 1100px;
     }
 
@@ -575,7 +589,12 @@ footer {
         width: 85%;
         left: 7.5%;
         top: 46.5%;
-        padding: 40px 0px
+        padding: 40px 0px;
+        height: 14%;
+    }
+
+    #error-message-mobile {
+        margin: -10px;
     }
 
     footer {
@@ -602,7 +621,8 @@ footer {
         margin-bottom: 30px;
     }
 
-    #sect4-lower {
+    form {
+        gap: 20px;
         flex-direction: column;
     }
 
